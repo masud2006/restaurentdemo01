@@ -5,8 +5,7 @@ A modern, elegant, and conversion-focused restaurant website demo designed to he
 This demo showcases how a professional restaurant website should look, feel, and turn visitors into paying customers.
 
 🔗 Live Demo
-👉 Website Preview:
-(Your live demo link here)
+👉 Website Preview: https://restaurentdemo01.vercel.app/ 
 
 Viewing the live demo gives restaurant owners a clear understanding of what they will receive after full customization.
 
