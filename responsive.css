@@ -1,0 +1,287 @@
+/* responsive.css – complete mobile/tablet adaptation */
+
+/* tablets and small laptops */
+@media screen and (max-width: 1200px) {
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-grid {
+        gap: 2rem;
+    }
+
+    .about-content h2 {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header-container {
+        padding: 0 1rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    .main-nav {
+        gap: 1rem;
+    }
+
+    .btn-call {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+        letter-spacing: 4px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-image {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .animated-underline {
+        margin: 0 auto;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .map-container {
+        height: 300px;
+    }
+
+    .parallax-title {
+        font-size: 3rem;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    /* customer reviews grid becomes 2 columns on tablets if space permits */
+    .reviews-grid {
+        gap: 1.5rem;
+    }
+    .review-item {
+        max-width: 280px;
+    }
+}
+
+/* mobile menu expanded */
+.mobile-menu-open .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    padding: 2rem;
+    gap: 1.5rem;
+    border-bottom: 1px solid var(--gold);
+    z-index: 999;
+}
+
+.mobile-menu-open .nav-links a {
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .site-header {
+        padding: 1rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+
+    .slider-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .slider-arrow.prev {
+        left: 10px;
+    }
+
+    .slider-arrow.next {
+        right: 10px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cuisine-card {
+        height: 350px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .glass-form {
+        padding: 1.5rem;
+    }
+
+    .parallax-section {
+        background-attachment: scroll; /* disable fixed on mobile for performance */
+    }
+
+    .parallax-title {
+        font-size: 2.2rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .about-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+
+    /* customer reviews adjustments for mobile */
+    .customer-reviews {
+        margin-top: 2rem;
+        padding: 1.5rem;
+    }
+    .reviews-title {
+        font-size: 2rem;
+    }
+    .reviews-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+    }
+    .review-item {
+        max-width: 100%;
+        width: 100%;
+        padding: 1.2rem;
+    }
+    .review-text {
+        font-size: 0.95rem;
+    }
+
+    /* footer responsiveness */
+    .footer-content {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    .footer-links a {
+        display: inline-block;
+        margin: 0.3rem;
+        font-size: 0.9rem;
+    }
+    .footer-address {
+        font-size: 0.85rem;
+    }
+    .footer-copyright {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo-text {
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-secondary {
+        padding: 0.8rem 1.8rem;
+        font-size: 0.9rem;
+    }
+
+    .btn-call {
+        display: none; /* hide call button on very small screens, keep in menu */
+    }
+
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .whatsapp-float img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .glass-form input,
+    .glass-form select,
+    .glass-form textarea {
+        padding: 0.9rem 1.2rem;
+    }
+
+    /* further compact reviews on very small screens */
+    .reviews-title {
+        font-size: 1.8rem;
+    }
+    .review-item {
+        padding: 1rem;
+    }
+    .review-author {
+        font-size: 0.9rem;
+    }
+    .review-rating {
+        font-size: 1rem;
+    }
+
+    /* footer fine-tuning */
+    .footer-logo .logo-text {
+        font-size: 1.6rem;
+    }
+    .footer-links a {
+        font-size: 0.85rem;
+        margin: 0.2rem;
+    }
+    .footer-copyright {
+        font-size: 0.75rem;
+    }
+}

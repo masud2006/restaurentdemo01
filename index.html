@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head> <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>AROMA | Gulshan · Dhaka</title> 
+        <!-- Preconnect & fonts --> 
+         <link rel="preconnect" href="https://fonts.googleapis.com"> 
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+         <!-- Stylesheets --> <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="responsive.css"> 
+    </head> 
+    <body> 
+        <!-- Custom cursor glow (desktop only) --> 
+         <div class="custom-cursor"></div> 
+         <!-- Sticky glass header --> 
+          <header class="site-header"> 
+            <div class="header-container"> 
+                <div class="logo"> 
+                    <span class="logo-text">A R O M A</span> <span class="logo-since">est. 2023</span> 
+                </div> <nav class="main-nav"> <ul class="nav-links"> 
+                    <li><a href="#home">Home</a></li> 
+                    <li><a href="#about">About</a></li> 
+                    <li><a href="#menu">Menu</a></li> 
+                    <li><a href="#experience">Experience</a></li> 
+                    <li><a href="#gallery">Gallery</a></li> 
+                    <li><a href="#reservation">Reservation</a></li> 
+                    <li><a href="#contact">Contact</a></li> 
+                </ul> 
+                <div class="nav-buttons"> 
+                    <a href="tel:+8801758742415" class="btn-call premium-glow">Call For Reservation</a> 
+                </div> <button class="mobile-menu-toggle" aria-label="Menu"> 
+                    <span></span><span></span><span></span> 
+                </button> </nav> 
+            </div> 
+        </header> 
+        <main> <!-- 1. Cinematic Hero Slider (full screen) --> 
+            <section id="home" class="hero-slider"> 
+                <div class="slider-container"> 
+                    <div class="slide active" style="background-image: url('bd.jpg');"> 
+                        <div class="slide-content"> 
+                            <h1 class="hero-title"><span class="text-reveal">Bangladeshi</span> 
+                                <span class="text-reveal">Heritage</span>
+                            </h1> 
+                            <p class="hero-subtitle">Ancient recipes, modern soul</p> 
+                            <div class="hero-buttons"> 
+                                <a href="#menu" class="btn-primary">Explore Menu</a> 
+                                <a href="#reservation" class="btn-secondary">Book A Table</a> 
+                            </div> 
+                        </div> 
+                    </div> 
+                    <div class="slide" style="background-image: url('in.jpg');"> 
+                        <div class="slide-content"> 
+                            <h1 class="hero-title">
+                                <span class="text-reveal">Indian</span> 
+                                <span class="text-reveal">Royalty</span>
+                            </h1> 
+                            <p class="hero-subtitle">Maharaja’s feast, Reimagined</p> 
+                            <div class="hero-buttons"> 
+                                <a href="#menu" class="btn-primary">Explore Menu</a> 
+                                <a href="#reservation" class="btn-secondary">Book A Table</a> 
+                            </div> 
+                        </div> 
+                    </div> 
+                    <div class="slide" style="background-image: url('pk.jpg');"> 
+                        <div class="slide-content"> 
+                            <h1 class="hero-title">
+                                <span class="text-reveal">Pakistani</span> 
+                                <span class="text-reveal">Flame</span>
+                            </h1> 
+                            <p class="hero-subtitle">Embers of tradition</p> 
+                            <div class="hero-buttons"> 
+                                <a href="#menu" class="btn-primary">Explore Menu</a> 
+                                <a href="#reservation" class="btn-secondary">Book A Table</a> 
+                            </div> 
+                        </div> 
+                    </div> 
+                </div> 
+                <button class="slider-arrow prev">&#10094;</button> 
+                <button class="slider-arrow next">&#10095;</button> 
+                <div class="slider-dots">                
+
+                </div> 
+            </section>
+
+            <!-- 2. About Section (luxury storytelling) -->
+<section id="about" class="about-section">
+  <div class="container about-grid">
+    <div class="about-image tilt-3d">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200" alt="AROMA interior" loading="lazy">
+    </div>
+    <div class="about-content scroll-reveal">
+      <h2>Where Dhaka meets the world</h2>
+      <p class="about-text">Nestled in the heart of Gulshan, AROMA is more than a restaurant — it is a sanctuary of flavour. We weave the culinary heritage of 
+        Bangladesh, India, Pakistan, and China into an experience that resonates with elegance. Every dish tells a story, every detail whispers luxury.</p>
+      <div class="animated-underline"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Cuisine Showcase (interactive 3D cards) -->
+<section id="cuisine" class="cuisine-section">
+  <div class="container">
+    <h2 class="section-title scroll-reveal">Four Culinary Kingdoms</h2>
+    <div class="card-grid">
+      <div class="cuisine-card tilt-card" data-cuisine="bangladeshi" style="background-image: url('b.jpg');">
+        <div class="card-overlay">
+          <h3>Bangladeshi</h3>
+        </div>
+      </div>
+      <div class="cuisine-card tilt-card" data-cuisine="indian" style="background-image: url('i2.png');">
+        <div class="card-overlay">
+          <h3>Indian</h3>
+        </div>
+      </div>
+      <div class="cuisine-card tilt-card" data-cuisine="pakistani" style="background-image: url('p.jpeg');">
+        <div class="card-overlay">
+          <h3>Pakistani</h3>
+        </div>
+      </div>
+      <div class="cuisine-card tilt-card" data-cuisine="chinese" style="background-image: url('c.jpg');">
+        <div class="card-overlay">
+          <h3>Chinese</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. Signature Menu Section -->
+<section id="menu" class="menu-section">
+  <div class="container">
+    <h2 class="section-title scroll-reveal">Signature Creations</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="s1.jpg" alt="Bangali Vojh" loading="lazy">
+        <div class="item-info">
+          <h3>Bangali Vojh</h3>
+          <p>Pure Bengali Traditional Touch</p>
+          <span class="price">৳2150</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="s2.jpg" alt="Nababi Vojh" loading="lazy">
+        <div class="item-info">
+          <h3>Nababi Vojh</h3>
+          <p>Dine like a King</p>
+          <span class="price">৳2250</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="s3.jpg" alt="Jamai Vojh" loading="lazy">
+        <div class="item-info">
+          <h3>Jamai Vojh</h3>
+          <p>Feel the Honour</p>
+          <span class="price">৳2450</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="s4.jpg" alt="Dish" loading="lazy">
+        <div class="item-info">
+          <h3>Atithi Vojh</h3>
+          <p>Experience the Hospitality</p>
+          <span class="price">৳2350</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Luxury Dining Experience (parallax) -->
+<section id="experience" class="parallax-section">
+  <div class="parallax-overlay">
+    <div class="container">
+      <h2 class="parallax-title"></h2>
+      <div class="glowing-divider"></div>
+      <!-- Customer reviews added as per instruction 1 -->
+      <div class="customer-reviews">
+        <h3 class="reviews-title">What Our Guests Say</h3>
+        <div class="reviews-grid">
+          <div class="review-item">
+            <p class="review-text">"An unforgettable dining experience! The ambiance and flavors transport you to another world."</p>
+            <p class="review-author">- Sarah Ahmed</p>
+            <div class="review-rating">★★★★★</div>
+          </div>
+          <div class="review-item">
+            <p class="review-text">"The fusion of Bangladeshi and Chinese cuisines is simply brilliant. A must-visit in Gulshan."</p>
+            <p class="review-author">- Rahim Khan</p>
+            <div class="review-rating">★★★★★</div>
+          </div>
+          <div class="review-item">
+            <p class="review-text">"Impeccable service and exquisite presentation. Every dish is a work of art."</p>
+            <p class="review-author">- Farida Hasan</p>
+            <div class="review-rating">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. Gallery (premium lightbox) -->
+<section id="gallery" class="gallery-section">
+  <div class="container">
+    <h2 class="section-title scroll-reveal">Visual Poetry</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="r1.jpg" alt="Gallery" loading="lazy"></div>
+      <div class="gallery-item"><img src="r2.jpg" alt="Gallery" loading="lazy"></div>
+      <div class="gallery-item"><img src="r3.jpg" alt="Gallery" loading="lazy"></div>
+      <div class="gallery-item"><img src="r7.jpeg" alt="Gallery" loading="lazy"></div>
+      <div class="gallery-item"><img src="r4.jpg" alt="Gallery" loading="lazy"></div>
+      <div class="gallery-item"><img src="r10.jpg" alt="Gallery" loading="lazy"></div>
+      <div class="gallery-item"><img src="r5.jpg" alt="Gallery" loading="lazy"></div>
+      <div class="gallery-item"><img src="r6.jpg" alt="Gallery" loading="lazy"></div>
+      <div class="gallery-item"><img src="r8.jpg" alt="Gallery" loading="lazy"></div>
+      <div class="gallery-item"><img src="r9.jpg" alt="Gallery" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Reservation Section -->
+<section id="reservation" class="reservation-section">
+  <div class="container">
+    <h2 class="section-title scroll-reveal">Secure Your Table</h2>
+    <form class="reservation-form glass-form">
+      <input type="text" placeholder="Full Name" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <input type="date" placeholder="Date" required>
+      <input type="time" placeholder="Time" required>
+      <select required>
+        <option value="" disabled selected>Number of Guests</option>
+        <option>2</option><option>4</option><option>6</option><option>8+</option>
+      </select>
+      <textarea placeholder="Special requests (allergies, occasion...)"></textarea>
+      <button type="submit" class="btn-primary submit-btn">Reserve Now</button>
+    </form>
+  </div>
+</section>
+
+<!-- 8. Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <h3>Visit us</h3>
+      <p>Gulshan Avenue, Dhaka 1212</p>
+      <p><a href="tel:+8801234567890">+880 1758 742415</a></p>
+      <p><a href="mailto:reserve@AROMA.com">reserve@AROMA.com</a></p>
+      <div class="social-links">
+        <a href="#" class="social-icon">FB</a>
+        <a href="#" class="social-icon">IG</a>
+        <a href="#" class="social-icon">X</a>
+      </div>
+    </div>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.8355753503167!2d90.4125!3d23.7800!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7e5f5f5f5f5%3A0x5f5f5f5f5f5f5f!2sGulshan%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1610000000000!5m2!1sen!2sbd" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+</main> 
+<!-- Floating WhatsApp Button --> 
+ <a href="https://wa.me/8801758742415" class="whatsapp-float" target="_blank" rel="noopener"> 
+    <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp"> </a> 
+    <!-- Lightbox Modal (hidden by default) --> 
+     <div class="lightbox-modal"> 
+        <span class="close-lightbox">&times;</span> 
+        <img class="lightbox-content" src="" alt=""> 
+    </div> 
+    <!-- Footer section added as per instruction 2 -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">AROMA</span>
+                    <p class="footer-address">Gulshan Avenue, Dhaka 1212</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a> | <a href="#about">About</a> | <a href="#menu">Menu</a> | <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-copyright">
+                    &copy; 2025 AROMA. All rights reserved. Designed & Developed by <a href="https://ventureit.tech/" target="_blank">Venture IT</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js">
+
+    </script>
+    </body> 
+    </html>
